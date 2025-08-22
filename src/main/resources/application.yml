@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: bat-workflow-builder
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=test;encrypt=true;trustServerCertificate=true
+    username: test
+    password: test
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    data: classpath:schema.sql
+  sql:
+    init:
+      mode: always       # ← これでschema.sqlが常に実行される
+      schema-locations: classpath:schema.sql
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

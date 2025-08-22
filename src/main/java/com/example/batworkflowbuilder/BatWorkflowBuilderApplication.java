@@ -1,4 +1,4 @@
-package com.example.bat_workflow_builder;
+package com.example.batworkflowbuilder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
